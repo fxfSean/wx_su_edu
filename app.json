@@ -1,0 +1,71 @@
+{
+  "pages": [
+    "pages/splash/splash",
+    "pages/board/board",
+    "pages/list/list",
+    "pages/item/item",
+    "pages/search/search",
+    "pages/profile/profile",
+    "pages/profile/login",
+    "pages/institution/institution",
+    "pages/institution/category/category",
+    "pages/institution/category/item/item",
+    "pages/board/event",
+    "pages/board/dreamstore/dreamstore",
+    "pages/board/dreamstore/item/item",
+    "pages/board/dreamstore/rules/rules",
+    "pages/board/dreamstore/record/record",
+    "pages/board/venue/venue",
+    "pages/board/venue/category/category",
+    "pages/board/venue/category/item/item",
+    "pages/profile/about/about",
+    "pages/profile/feedback/feedback"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#35495e",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "苏州校外通",
+    "backgroundColor": "#fff",
+    "backgroundTextStyle": "dark",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#ccc",
+    "selectedColor": "#35495e",
+    "borderStyle": "white",
+    "backgroundColor": "#f9f9f9",
+    "list": [
+      {
+        "text": "首页",
+        "pagePath": "pages/board/board",
+        "iconPath": "images/board.png",
+        "selectedIconPath": "images/board-actived.png"
+      },
+      {
+        "text": "机构",
+        "pagePath": "pages/institution/institution",
+        "iconPath": "images/institution.png",
+        "selectedIconPath": "images/institution-actived.png"
+      },
+      {
+        "text": "发现",
+        "pagePath": "pages/search/search",
+        "iconPath": "images/search.png",
+        "selectedIconPath": "images/search-actived.png"
+      },
+      {
+        "text": "我的",
+        "pagePath": "pages/profile/profile",
+        "iconPath": "images/profile.png",
+        "selectedIconPath": "images/profile-actived.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "connectSocket": 10000,
+    "uploadFile": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}

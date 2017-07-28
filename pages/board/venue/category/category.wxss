@@ -1,0 +1,8 @@
+.item .meta .sub-title {
+  width: 400rpx;
+  font-size: 22rpx;
+  color: #c0c0c0;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:normal;
+}

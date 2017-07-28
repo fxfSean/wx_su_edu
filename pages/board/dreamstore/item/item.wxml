@@ -1,0 +1,18 @@
+<!-- 电影明细 -->
+<loading hidden="{{!loading}}">
+  加载中...
+</loading>
+<scroll-view scroll-y="true">
+  <view class="meta">
+    <image style="width:{{imageWidth/2}}px; height:{{imageHeight/2}}px" src="{{detail.data.image}}" background-size="cover" bindload="imgload" />
+    <text class="title">{{detail.data.title}}</text>
+    <text class="info">金币：{{detail.data.points}}</text>
+    <text class="info">数量:{{detail.data.quantity}} </text>
+    <text class="info">添加日期：{{detail.data.date_added}}</text>
+  </view>
+  <view class="line"></view>
+  <view class="summary">
+    <text class="label">摘要：</text>
+    <text class="content">{{detail.data.link}}</text>
+  </view>
+</scroll-view>

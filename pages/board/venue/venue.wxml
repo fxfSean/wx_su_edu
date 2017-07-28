@@ -1,0 +1,10 @@
+<view class="container">
+  <view class="main-core">
+  <block wx:for="{{core}}" wx:key="id">
+    <navigator url="/pages/board/venue/category/category?id={{item.trainingbase_category_id}}" class="main-core-item">
+      <image class="board-img" src="{{item.image}}"></image>
+      <text class="core-item-name">{{item.name}}</text>
+    </navigator>
+  </block>
+  </view>
+</view>

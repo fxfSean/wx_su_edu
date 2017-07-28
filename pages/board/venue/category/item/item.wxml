@@ -1,0 +1,15 @@
+<!-- 电影明细 -->
+<loading hidden="{{!loading}}">
+  加载中...
+</loading>
+<scroll-view scroll-y="true">
+  <view class="meta">
+    <image style="width:{{imageWidth/2}}px; height:{{imageHeight/2}}px" src="{{detail.data.thumb}}" background-size="cover" bindload="imgload" />
+    <text class="title">{{detail.data.title}}</text>
+  </view>
+  <view class="line"></view>
+  <view class="summary">
+    <text class="label">摘要：</text>
+    <text class="content">{{detail.data.brief}}</text>
+  </view>
+</scroll-view>

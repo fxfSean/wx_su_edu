@@ -1,0 +1,13 @@
+.content{
+  padding: 20rpx;
+}
+
+.question{
+  margin-bottom: 20rpx;
+}
+
+.answer{
+  font-size: 30rpx;
+  color: gray;
+  margin-bottom: 30rpx;
+}

@@ -1,0 +1,7 @@
+<view class="container">
+  <view class="img"></view>
+  <view class="center-text">苏州校外通</view>
+  <view class="center-text">v0.0.1</view>  
+  <view class="border"></view>
+  <view class="buttom-text">苏州市青少年校外教育指导中心版权所有</view>
+</view>

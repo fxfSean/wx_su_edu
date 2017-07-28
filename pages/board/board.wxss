@@ -1,0 +1,88 @@
+.container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  min-height: 100%;
+  font-size: 32rpx;
+}
+.head {
+  line-height: 1;
+}
+.body {
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+  flex: 1;
+  overflow: auto;
+}
+.swiper {
+  height: 300rpx;
+  width: 100%;
+}
+.swiper image {
+  height: 100%;
+  width: 100%;
+}
+.header {
+  padding: 20rpx 80rpx 20rpx;
+}
+.title {
+  display: block;
+  font-size: 50rpx;
+}
+.description {
+  display: block;
+  color: #888;
+  margin-top: -10rpx;
+  font-size: 28rpx;
+  border-bottom:1rpx solid #ccc;
+  margin-left: -30rpx;
+  margin-right: -30rpx;
+}
+
+.board {
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  background-color: #FBF9FE;
+  overflow: hidden;
+  border-radius: 4rpx;
+  cursor: pointer;
+}
+.board-info {
+  display: flex;
+  padding: 40rpx;
+  align-items: center;
+  flex-direction: row;
+}
+.board-name {
+  flex: 1;
+}
+.board-img {
+  width: 70rpx;
+  height: 70rpx;
+}
+
+.main-core{
+  display: flex;
+  flex-flow: row wrap;
+  align-content: flex-start;
+  background: #fff;
+  padding: 15rpx 10rpx 10rpx;
+  min-height: 200rpx;
+  overflow: hidden;
+}
+
+.main-core-item{
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  width: 33%;
+  height: 120rpx;
+}
+
+.core-item-name{
+  display:block;
+  margin-top:10rpx;
+  font-size: 25rpx;
+}

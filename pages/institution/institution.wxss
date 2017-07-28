@@ -1,0 +1,34 @@
+.main-core {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: flex-start;
+  background: #fff;
+  padding: 15rpx 10rpx 10rpx;
+  min-height: 200rpx;
+  overflow: hidden;
+}
+
+.main-core-item {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  width: 50%;
+  height: 200rpx;
+}
+
+.core-item-name {
+  display: block;
+  margin-top: 10rpx;
+  font-size: 25rpx;
+}
+
+.board-name {
+  flex: 1;
+}
+
+.board-img {
+  width: 100rpx;
+  height: 100rpx;
+}

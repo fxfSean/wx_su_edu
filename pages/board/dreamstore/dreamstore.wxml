@@ -1,0 +1,41 @@
+<scroll-view>
+  <view class="container">
+
+
+    <view class="points">
+      <text class="gold">金币</text>
+      <text class="coin">0</text>
+    </view>
+    <view class="line"></view>
+    <view class="main-core">
+      <navigator url="../dreamstore/rules/rules" class="main-core-item">
+        <image class="board-img" src="/images/points_rule.png"></image>
+        <text class="core-item-name">兑换规则</text>
+      </navigator>
+      <navigator url="../dreamstore/record/record" class="main-core-item.border">
+        <image class="board-img" src="/images/exchange_recored.png"></image>
+        <text class="core-item-name">兑换记录</text>
+      </navigator>
+    </view>
+    <view class="line"></view>
+    <text class="title">礼品兑换</text>
+    <view class="core-gift">
+      <block wx:for="{{gift}}" wx:key="id">
+        <navigator url="/pages/board/dreamstore/item/item?gift_id={{item.gift_id}}" class="core-gift-item">
+          <text class="gift-name">{{item.title}}</text>
+          <image class="gift-img" src="{{item.image}}"></image>
+          <text class="gift-name-right" wx:if="{{item.quantity == '0'}}">敬请期待</text>
+          <text class="gift-name-right" wx:else>剩余{{item.quantity}}件</text>
+        </navigator>
+      </block>
+      <view class="page-body">
+        <view class="tips">
+          <view wx:if="{{hasMore}}">
+            <image src="/images/loading.gif" mode="aspectFill" /><text>玩了命的加载中...</text></view>
+          <view wx:else><text>没有更多内容了</text></view>
+        </view>
+      </view>
+      <loading hidden="{{!loading}}">加载中...</loading>
+    </view>
+  </view>
+</scroll-view>

@@ -1,0 +1,60 @@
+<import src="../common/movie-list.wxml" />
+
+<view class="container">
+  <view class="head">
+    <swiper class="swiper" indicator-dots="true" autoplay="true" interval="5000" duration="1000">
+      <block wx:for="{{movie}}" wx:for-index="index">
+        <swiper-item>
+          <!--TODO edu item.banner-->
+          <image src="{{item.banner}}" class="slide-image" mode="aspectFill" />
+        </swiper-item>
+      </block>
+    </swiper>
+    <view class="main-core">
+      <navigator url="../board/event?path=60" class="main-core-item">
+        <image class="board-img" src="/images/icon_home_event.png"></image>
+        <text class="core-item-name">实践活动</text>
+      </navigator>
+      <navigator url="../board/event?path=61" class="main-core-item">
+        <image class="board-img" src="/images/icon_home_train.png"></image>
+        <text class="core-item-name">素质培训</text>
+      </navigator>
+      <navigator url="../board/event?path=62" class="main-core-item">
+        <image class="board-img" src="/images/icon_home_compete.png"></image>
+        <text class="core-item-name">多彩赛事</text>
+      </navigator>
+      <navigator url="../board/dreamstore/dreamstore" class="main-core-item">
+        <image class="board-img" src="/images/icon_home_dream_store.png"></image>
+        <text class="core-item-name">梦想商城</text>
+      </navigator>
+      <navigator url="../board/venue/venue" class="main-core-item">
+        <image class="board-img" src="/images/icon_home_institution.png"></image>
+        <text class="core-item-name">校外基地</text>
+      </navigator>
+      <navigator url="url" class="main-core-item">
+        <image class="board-img" src="/images/icon_home_electric_journal.png"></image>
+        <text class="core-item-name">电子期刊</text>
+      </navigator>
+    </view>
+
+    <view class="header">
+      <text class="description">最新资讯</text>
+    </view>
+
+  </view>
+  <template is="movie-list" data="{{ movies, loading, hasMore, loadMore }}" />
+  <!-- <view class="body">
+    <scroll-view scroll-y="true" height="100%">
+      <block wx:for="{{boards}}">
+        <navigator url="../list/list?type={{item.key}}&title={{item.name}}">
+          <view class="board">
+            <view class="board-info">
+              <text class="board-name">{{item.name}}</text>
+              <image class="board-img" src="/images/arrowright.png" mode="aspectFill"/>
+            </view>
+          </view>
+        </navigator>
+      </block>
+    </scroll-view>
+  </view> -->
+</view>

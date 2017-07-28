@@ -1,0 +1,52 @@
+
+.container{
+  padding: 0;
+}
+
+.title{
+  margin-left: 20rpx;
+  margin-top: 20rpx;
+  font-size: 30rpx;
+  color: gray;
+}
+
+.input{
+  border-top: 1px solid #e5e5e5;
+  padding: 10rpx;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+
+.textarea{
+  width: 100%;
+  font-size: 30rpx;
+  color: gray;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.center{
+  flex: 1
+}
+
+.issue{
+    font-size: 9pt;
+    line-height: 135%;
+    color: #ccc;
+    margin-top: 20rpx;
+    padding: 0 30rpx;
+    word-break: break-all;
+    text-indent: 1em;
+    padding-top: 30rpx;
+}
+
+.confirm-btn {
+  font-size: 13pt;
+  line-height: 85rpx;
+  height: 85rpx;
+  background: #7acfa6;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  margin: 50rpx 3%;
+}

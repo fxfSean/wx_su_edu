@@ -1,0 +1,107 @@
+<!--index.wxml-->
+<view class="container">
+  <block wx:if="{{!isBind}}">
+    <view class="user-info">
+      <view class="info-hd">
+        <image class="user-avatar" src="{{userInfo.avatarUrl}}"></image>
+        <view class="user-title">
+          <text class="user-name">{{userInfo.nickName}}</text>
+          <text class="user-id">已登陆</text>
+        </view>
+        <view class="btn-open">
+          <image class="btn-enter" src="/images/arrowright.png"></image>
+        </view>
+      </view>
+    </view>
+  </block>
+  <view class="user-info-box" wx:else>
+    <navigator url="/pages/profile/login" class="user-info">
+      <view class="info-hd">
+        <image class="user-avatar" src="{{userInfo.avatarUrl}}"></image>
+        <view class="user-title">
+          <text class="user-name">{{userInfo.nickName}}</text>
+          <text class="user-id">未登陆</text>
+        </view>
+        <text class="bind-btn">前往登陆</text>
+        <view class="btn-open">
+          <image class="btn-enter" src="/images/arrowright.png"></image>
+        </view>
+      </view>
+    </navigator>
+  </view>
+  <view class="more-list">
+    <navigator url="/pages/more/issues">
+      <view class="more-btn">
+        <image class="btn-icon" src="/images/icon_my_registe.png"></image>
+        <text class="btn-text">我的报名</text>
+        <view class="btn-open">
+          <image class="btn-enter" src="/images/arrowright.png"></image>
+        </view>
+      </view>
+    </navigator>
+    <navigator url="/pages/more/issues">
+      <view class="more-btn">
+        <image class="btn-icon" src="/images/icon_my_blog.png"></image>
+        <text class="btn-text">我的消费</text>
+        <view class="btn-open">
+          <image class="btn-enter" src="/images/arrowright.png"></image>
+        </view>
+      </view>
+    </navigator>
+    <navigator url="/pages/more/issues">
+      <view class="more-btn">
+        <image class="btn-icon" src="/images/icon_my_team.png"></image>
+        <text class="btn-text">我的证书</text>
+        <view class="btn-open">
+          <image class="btn-enter" src="/images/arrowright.png"></image>
+        </view>
+      </view>
+    </navigator>
+    <navigator url="/pages/more/issues">
+      <view class="more-btn">
+        <image class="btn-icon" src="/images/icon_my_event.png"></image>
+        <text class="btn-text">我的积分</text>
+        <view class="btn-open">
+          <image class="btn-enter" src="/images/arrowright.png"></image>
+        </view>
+      </view>
+    </navigator>
+    <navigator url="/pages/more/issues">
+      <view class="more-btn">
+        <image class="btn-icon" src="/images/icon_my_walfare.png"></image>
+        <text class="btn-text">我的福利</text>
+        <view class="btn-open">
+          <image class="btn-enter" src="/images/arrowright.png"></image>
+        </view>
+      </view>
+    </navigator>
+    <navigator url="/pages/more/issues" class="issue-link">
+      <view class="more-btn">
+        <image class="btn-icon" src="/images/icon_my_message.png"></image>
+        <text class="btn-text">我的消息</text>
+        <view class="btn-open">
+          <image class="btn-enter" src="/images/arrowright.png"></image>
+        </view>
+      </view>
+    </navigator>
+    <navigator url="/pages/profile/feedback/feedback">
+      <view class="more-btn">
+        <image class="btn-icon" src="/images/icon_my_feedback.png"></image>
+        <text class="btn-text">反馈</text>
+        <view class="btn-open">
+          <image class="btn-enter" src="/images/arrowright.png"></image>
+        </view>
+      </view>
+    </navigator>
+    <navigator url="about" class="about-link">
+      <view class="more-btn">
+        <image class="btn-icon" src="/images/icon_my_about.png"></image>
+        <text class="btn-text">关于</text>
+        <view class="btn-open">
+          <image class="btn-enter" src="/images/arrowright.png"></image>
+        </view>
+      </view>
+    </navigator>
+  </view>
+
+</view>

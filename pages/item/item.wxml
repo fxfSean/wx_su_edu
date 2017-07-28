@@ -1,0 +1,17 @@
+<!-- 电影明细 -->
+<loading hidden="{{!loading}}">
+  加载中...
+</loading>
+<scroll-view scroll-y="true" wx:if="{{movie.data.name}}">
+  <view class="meta">
+    <image class="poster" src="{{movie.data.popup}}" background-size="cover"/>
+    <text class="title">{{movie.data.name}}</text>
+    <text class="info">金额：¥ {{movie.data.price}}</text>
+    <text class="info">类型：{{movie.data.path == 60 ? '实践活动' : (movie.data.path == 61 ? '素质培训':'多彩赛事')}} </text>
+    <text class="info">地点：{{movie.data.location}}</text>
+  </view>
+  <view class="summary">
+    <text class="label">摘要：</text>
+    <text class="content">{{movie.data.descriptions}}</text>
+  </view>
+</scroll-view>
